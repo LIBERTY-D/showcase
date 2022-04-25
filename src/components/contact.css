@@ -1,0 +1,109 @@
+.contact{
+    height: 100vh;
+    position: relative;
+}
+
+.empty{
+    color: red;
+    text-align: center;
+}
+.contact-bg{
+    width: 20px;
+    height: 100%;
+    background-color:#8f326f;
+    position: absolute;
+}
+.contact-wrapper{
+    padding: 50px;
+    display: flex;
+}
+
+.contact-left{
+    flex: 1;
+}
+.contact-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-title{
+    font-size: 60px;
+    width: 80%;
+}
+.contact-info-item{
+    display: flex;
+    align-items: center;
+    margin:50px 0px;
+    font-weight: 300;
+}
+.phone,.address,.email{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.phone{
+    color:green;
+}
+.email{
+    color: purple;
+}
+.address{
+    color:red;
+}
+.contact-desc{
+    font-weight: 200;
+}
+form{
+    margin-top: 20px;
+}
+input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid #333;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+
+}
+textarea{
+    width: 100%;
+}
+button{
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    background-color: green;
+    color: white;
+    border: none;
+}
+.modal{
+    width: 60vw;
+    height: 20vh;
+    background-color: rgb(11, 11, 15);
+    border-radius: 0.5rem;
+    color: white;
+    border: 1px solid #333;
+    position: fixed;
+    left: 50%;
+  
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.modal-content{
+    text-align: center;
+    padding: 20px;
+}
+.close-modal{
+    cursor: pointer;
+}
+
+@media  screen and (max-width:480px) {
+    
+    .contact-wrapper{
+       
+      flex-direction: column;
+        
+    }
+    }
